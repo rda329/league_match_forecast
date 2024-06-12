@@ -1,0 +1,35 @@
+Tyler1's Summoner Name => "T1 OK GOOD YES"
+
+1. Get data of Tyler1, teammates, and enemy team. 
+
+#riot API Spectator-V5 returns list of participants
+    
+    Data : 
+    - player's wr
+    - Champion winrate
+    -Only look at data for gold 1 in NA region and above to avoid outliers 
+
+#League-V4 returns information about summoner Winrate/streaks/rank/
+#Primary role has to be infered by their match history using the matchv5 and League-V4 APIs
+#Champ winrate and matchup winrates :  can thos be parsed from op.gg 
+
+Data from last 30 days only 
+- 30,000 matches total 
+- 10.000 matches each day
+
+
+
+Getting a random sample of 30,000 matches from the last month
+1. Get a sample set of summer ID
+    - NA region
+    - Emerald IV and Above rank
+
+options 
+- leaderboards
+- Get 1 player from each of their last 100 games 
+
+Do weighted averages make winrate per role weigh more then other components 
+
+
+
+indiviuals winrate =  winrate in last 20 games
